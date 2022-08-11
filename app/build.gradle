@@ -1,0 +1,83 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    lintOptions {
+        checkReleaseBuilds false
+    }
+    compileSdkVersion 32
+    buildToolsVersion '30.0.3'
+
+    defaultConfig {
+        applicationId "com.OCK.earn"
+        minSdkVersion 21
+        targetSdkVersion 32
+        multiDexEnabled true
+        versionCode 12
+        versionName "12"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.4.2'
+   // implementation('com.mopub:mopub-sdk:+@aar') {
+   //     transitive = true
+    //}
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.google.firebase:firebase-analytics:21.1.0'
+    implementation 'com.google.firebase:firebase-auth:21.0.6'
+    implementation 'com.google.firebase:firebase-database:20.0.5'
+    implementation 'com.google.firebase:firebase-storage:20.0.1'
+   // implementation 'com.google.firebase:firebase-ads:19.3.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+  //  implementation 'com.google.android.gms:play-services-ads-identifier:17.0.0'
+    //implementation 'com.google.android.gms:play-services-base:17.4.0'
+   // implementation 'com.adcolony:sdk:4.6.3'
+
+    //AppLovin
+    implementation 'com.applovin:applovin-sdk:11.3.0'
+
+    //poll_fish
+    implementation 'com.pollfish:pollfish:5.5.1:googleplayRelease@aar'
+
+ //   implementation 'com.google.android.gms:play-services-ads:19.3.0'
+    implementation 'io.paperdb:paperdb:2.7.1'
+    implementation 'com.github.rey5137:material:1.3.1'
+
+    //AYga4hapZILCJHHFrl2t2FiMTDwAhO7STeShX3ZMx92yO2KlFTj9g85q5P6PfCCW2J2B6AOO6A4VXpHD1HJAkw==
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    implementation 'com.karumi:dexter:6.2.1'
+    implementation platform('com.google.firebase:firebase-bom:28.4.0')
+    implementation 'com.github.f0ris.sweetalert:library:1.6.2'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'br.com.simplepass:loading-button-android:1.14.0'
+    implementation 'com.facebook.android:audience-network-sdk:5.11.0'
+    implementation 'com.startapp:inapp-sdk:4.9.2'
+
+
+
+    implementation project(path: ':ayetpublisher3.5')
+    implementation files('libs/tapjoyconnectlibrary.jar')
+    implementation files('libs/unity-ads.aar')
+    implementation 'org.jsoup:jsoup:1.13.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+}

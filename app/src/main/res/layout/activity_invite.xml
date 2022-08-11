@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InviteActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+       android:id="@+id/toolbar"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/white">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Invite &amp; Earn"
+                android:textSize="22sp"
+                android:textColor="@color/darkTextColor"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+
+        android:id="@+id/banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shareBtn"
+        android:layout_alignBottom="@+id/referCodeEt"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-233dp"
+        android:layout_marginBottom="333dp"
+
+        android:orientation="vertical" />
+
+    <ImageView
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:layout_below="@+id/toolbar"
+    android:src="@drawable/gift"
+    android:layout_margin="32dp"
+    android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Your Referal Code"
+        android:padding="12dp"
+        android:minWidth="160dp"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        android:layout_margin="12dp"
+      android:layout_above="@+id/referCodeEt"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Earning Task"
+        android:background="@drawable/refer_bg"
+        android:padding="12dp"
+        android:minWidth="160dp"
+        android:gravity="center_horizontal"
+        android:textSize="22sp"
+        android:id="@+id/referCodeEt"
+        />
+
+    <Button
+        android:id="@+id/redeemBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/shareBtn"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttons"
+        android:backgroundTint="@color/themeColor"
+        android:minWidth="180dp"
+        android:text="Redeem Code"
+
+        />
+
+    <Button
+        android:id="@+id/shareBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="100dp"
+
+        android:background="@drawable/buttons"
+        android:backgroundTint="@color/themeColor"
+        android:minWidth="180dp"
+        android:text="Share Your Code" />
+
+</RelativeLayout>

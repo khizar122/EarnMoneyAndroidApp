@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp"
+    tools:context=".fragment.MobFragment">
+    <TextView
+        android:id="@+id/coinEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:drawableEnd="@drawable/ic_coins"
+        android:drawablePadding="8dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        tools:ignore="RtlCompat" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="13dp"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:errorEnabled="true">
+
+            <EditText
+                android:id="@+id/paytm_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="text"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:errorEnabled="true">
+
+            <EditText
+                android:id="@+id/number_paytm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint=" Mobile Account Number"
+                android:inputType="phone"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/radioGroup">
+            <RadioButton
+                android:id="@+id/paytm50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jazz cash 1000RS(10000 coins)">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/paytm100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EasyPaisa 2000RS(20000 coins)">
+            </RadioButton>
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit_btn"
+        android:text="Withdraw"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textColor="#fff"
+        android:minWidth="160dp"
+        android:background="@drawable/buttons"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+
+        />
+
+
+</RelativeLayout>

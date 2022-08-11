@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    package="com.OCK.earn">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <application
+        android:name=".Application"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:networkSecurityConfig="@xml/cleartxt_config"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="false"
+        android:hardwareAccelerated="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:targetApi="n">
+
+        <activity
+            android:name=".webView"
+            android:exported="true" />
+        <activity android:name=".HistoryActivity" />
+        <activity android:name=".TaskActivity" />
+        <activity
+            android:name=".WatchActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".fragment.FragmentReplacerActivity"
+            android:hardwareAccelerated="true" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegistrationActivity" />
+
+
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name="com.tapjoy.TJAdUnitActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name="com.tapjoy.TJContentActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".WithdrawActivity" />
+        <activity android:name=".InviteActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".ForgertPasswordActivity" />
+        <activity android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data android:name="applovin.sdk.key"
+            android:value="GUKF8wKAz0nQQk3VXNApARyGR3G-v5pzzGG5H84aDlPnJy5HbBTx4B0FCccXtt36sxcDupMP7IT6xESQBSKL82"/>
+<!--        <meta-data-->
+<!--            android:name="com.google.android.gms.ads.APPLICATION_ID"-->
+<!--            android:value="@string/admob_app_id" />-->
+        <meta-data
+            android:name="AYET_APP_KEY"
+            android:value="@string/ayet_api" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.startapp.sdk.APPLICATION_ID"
+            android:value="208310562" />
+<!--        <meta-data-->
+<!--            android:name="com.google.android.gms.ads.APPLICATION_ID"-->
+<!--            android:value="@string/admob_app_id" />-->
+    </application>
+
+</manifest>

@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('ayetpublisher3.5.jar'))

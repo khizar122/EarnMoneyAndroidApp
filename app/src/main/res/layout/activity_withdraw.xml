@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WithdrawActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:background="@drawable/bg_main"
+        app:titleTextColor="@color/whiteTextColor"
+        app:title="Withdraw"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/amazonGiftCard"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:cardCornerRadius="12dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/amazonImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/jazz" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/paytmcard"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:cardCornerRadius="12dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/paytmimage"
+                    android:src="@drawable/easypasa"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/redeemHistoryCard"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:cardCornerRadius="12dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_info" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="8dp"
+                    android:textColor="@color/darkTextColor"
+                    android:text="Withdraw History"
+                    android:textSize="18dp"
+                    android:textStyle="bold|italic" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/payoneer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:cardCornerRadius="12dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/payoneer" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    </LinearLayout>

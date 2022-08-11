@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    tools:context=".ProfileActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contrainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/bg_main">
+
+        <TextView
+            android:id="@+id/coinEt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:drawableEnd="@drawable/ic_coins"
+            android:drawablePadding="8dp"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="RtlCompat" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_Image"
+            android:layout_width="98dp"
+            android:layout_height="99dp"
+            android:src="@drawable/profile"
+            app:civ_border_color="#000"
+            app:civ_border_width="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/image_edit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_ic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/profile_Image"
+            app:layout_constraintHorizontal_bias="1.4"
+            app:layout_constraintStart_toEndOf="@+id/proimage"
+            app:layout_constraintStart_toStartOf="@+id/profile_Image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nameProf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Username"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/profile_Image"
+            app:layout_constraintStart_toStartOf="@+id/profile_Image"
+            app:layout_constraintTop_toBottomOf="@+id/profile_Image" />
+
+        <TextView
+            android:id="@+id/emailProf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="user@email.com"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/nameProf"
+            app:layout_constraintHorizontal_bias="0.436"
+            app:layout_constraintStart_toStartOf="@+id/nameProf"
+            app:layout_constraintTop_toBottomOf="@+id/nameProf" />
+
+        <TextView
+            android:id="@+id/phoneProf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="9123456789"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/emailProf"
+            app:layout_constraintStart_toStartOf="@+id/emailProf"
+            app:layout_constraintTop_toTopOf="@+id/emailProf" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_below="@+id/contrainLayout">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tell Your Friend"
+            android:id="@+id/shareEt"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:textColor="#FF9800"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="8dp"
+            android:background="#FF9800" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Redeem History "
+            android:id="@+id/redeemHistoryEt"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:textColor="#FF9800"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="8dp"
+            android:background="#FF9800" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:id="@+id/LogoutEt"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:textColor="#FF9800"
+            />
+
+    </LinearLayout>
+<Button
+    android:id="@+id/profile_update"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Update"
+    android:textColor="#fff"
+    android:background="@drawable/buttons"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_margin="50sp"
+    android:minWidth="150dp"
+    android:visibility="gone"
+    />
+</RelativeLayout>

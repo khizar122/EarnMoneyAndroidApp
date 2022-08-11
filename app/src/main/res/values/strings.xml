@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Earn Money</string>
+
+    <!--AdColony-->
+    <string name="App_ID">app39f2954ce1814d0cb6</string>
+    <string name="adcolony_Interstitial">vz8a38924c292441fcbd</string>
+    <string name="adcolony_reward">vze0981ced2e204a94a2</string>
+    <string name="adcolony_reward2">vz889385dba3ee401580</string>
+
+    <!--AdMob-->
+    <string name="admob_app_id">ca-app-pub-6572458882597235~8504667288</string>
+    <string name="admob_banner_id">ca-app-pub-6572458882597235/4920192213</string>
+    <string name="admob_interstitial_id">ca-app-pub-6572458882597235/1719313800</string>
+
+    <!--facebook adunit id-->
+    <string name="fb_banner_id"></string>
+    <string name="fb_interstitial_id"></string>
+    <string name="fb_rewarded_id"> </string>
+    <string name="fb_rewarded_id_2"></string>
+    <string name="fb_native_ban_id"></string>
+    <string name="pollfish_api">2c32eca2-dbb9-4062-a0c7-9003aee29594</string>
+    <string name="ayet_api">dcd83a36b1673f9f17e6a226a3bd36d3</string>
+    <string name="ayet_adslot">adslot1</string>
+    <string name="login_Email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="invite">Write Invitation \n Code Here</string>
+    <string name="Code">Invitation Code</string>
+    <string name="Track">Track Members</string>
+    <string name="points">Points</string>
+    <string name="ad">Watch Add</string>
+    <string name="FAQ">News</string>
+    <string name="Profile">Profile</string>
+
+    <string name="youAreNotUpdatedTitle">Update Available</string>
+    <string name="youAreNotUpdatedMessage">A new version of Earn Money is available. Please update to version </string>
+    <string name="youAreNotUpdatedMessage1"> now.</string>
+    <string name="update">Update</string>
+
+</resources>
