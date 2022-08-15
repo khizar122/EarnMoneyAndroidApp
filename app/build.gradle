@@ -2,9 +2,6 @@ apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'
 
 android {
-    lintOptions {
-        checkReleaseBuilds false
-    }
     compileSdkVersion 32
     buildToolsVersion '30.0.3'
 
@@ -24,6 +21,9 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    }
+    lint {
+        checkReleaseBuilds false
     }
 }
 
